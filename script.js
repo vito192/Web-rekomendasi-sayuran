@@ -31,6 +31,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300); // Jeda 300ms
     }
 
+    // Scroll lembut ke bagian rekomendasi
+const btnScroll = document.querySelector('.btn');
+if (btnScroll) {
+  btnScroll.addEventListener('click', (e) => {
+    e.preventDefault(); // cegah reload halaman
+    const target = document.querySelector('#rekomendasi');
+    if (target) {
+      // animasi scroll lebih halus dari bawaan browser
+      window.scrollTo({
+        top: target.offsetTop - 60, // -60 biar tidak ketutup navbar
+        behavior: 'smooth'
+      });
+    }
+  });
+}
+
+
     // 3. Menampilkan pesan sapaan di konsol
     console.log("Website SayurSehat.id berhasil dimuat! Selamat Mencoba Fitur Interaktif.");
 
@@ -44,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // event.preventDefault();
         //});
     //}
+
 
 
 })
