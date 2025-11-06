@@ -7,7 +7,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 /* Navbar */
@@ -138,4 +138,5 @@ footer {
   font-size: 14px;
   color: #2b7a2b;
 }
+
 
