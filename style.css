@@ -6,6 +6,10 @@ body {
   background-size: cover;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -104,6 +108,7 @@ body {
   color: #2e7d32;
 }
 
+
 .btn {
   display: inline-block;
   background-color: #2e7d32;
@@ -133,3 +138,4 @@ footer {
   font-size: 14px;
   color: #2b7a2b;
 }
+
